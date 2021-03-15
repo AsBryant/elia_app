@@ -14,13 +14,12 @@ function App() {
         <Router>
         <div className="App">
             <header className="App-header">
-                <Redirect exact from="/" to="index" />
-                <Route path="/index" component={Home}/>
                 <Route path="/login" component={Login}/>
                 <Route path="/register" component={Register}/>
                 <Route path="/main" component={Main}/>
                 <Route path="/analytics" component={Analytics}/>
                 <Route path="/settings" component={Settings}/>
+                <Route exact path={["/","/index"]} component={Home} />
             </header>
         </div>
         </Router>
