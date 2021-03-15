@@ -2,11 +2,12 @@ import './App.css';
 import Login from './Login';
 import Home from './Home';
 import Register from "./Register";
-import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Main from "./Main";
 import Analytics from "./Analytics";
 import Settings from "./Settings";
 import React from "react";
+import FourOhFour from "./Components/404";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/main" component={Main}/>
                 <Route path="/analytics" component={Analytics}/>
                 <Route path="/settings" component={Settings}/>
+                <Route path="/404" component={FourOhFour}/>
                 <Route exact path={["/","/index"]} component={Home} />
             </header>
         </div>

@@ -67,18 +67,9 @@ function Profile() {
                         </Col>
                     </Form.Row>
                     <Form.Row>
-                        <Form.Label>Children:</Form.Label>
+                        <Form.Label>Child:</Form.Label>
                     </Form.Row>
                     <Form.Row>
-                        <Col>
-                            <Alert variant="dark">
-                                <Form.Label>Name:</Form.Label>
-                                <Form.Control type="text" placeholder="David Price" readOnly  />
-                                <Form.Label>Age:</Form.Label>
-                                <Form.Control type="number" placeholder="8" readOnly  />
-                                <Button variant="info">View profile</Button>
-                            </Alert>
-                        </Col>
                         <Col>
                             <Alert variant="dark">
                                 <Form.Label>Name:</Form.Label>
